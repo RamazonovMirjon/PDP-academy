@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.pdp">
    <application
-        android:label="pdp"
+        android:label="PDP IT-ACADEMY"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
         <activity
