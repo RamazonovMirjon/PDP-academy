@@ -29,8 +29,7 @@ class _MyHomePageState extends State<MyHomePage> {
           leading:
               const CircleAvatar(child: Icon(Icons.check_box_outline_blank)),
           onTap: () {
-            Navigator.push(
-                context, MaterialPageRoute(builder: (_) => pageModel.page));
+            Navigator.pushNamed(context, pageModel.image);
           },
         ),
       );

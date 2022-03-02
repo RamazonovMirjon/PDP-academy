@@ -1,27 +1,23 @@
-
 import 'package:flutter/material.dart';
-import 'package:pdp/screens/home/my_home_page.dart';
-
+import 'package:pdp/core/components/them_comp.dart';
+import 'package:pdp/routes/my_route.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  MyApp({Key? key}) : super(key: key);
+  final MyRoute _myRoute = MyRoute();
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Ramazonov',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-      home:  const  MyHomePage(),
-      
+      theme: ThemeComp.materialTheme,
+      onGenerateRoute: _myRoute.onGenarateRout,
+      initialRoute: "/",
     );
   }
-
-  
 }
